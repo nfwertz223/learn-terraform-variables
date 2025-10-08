@@ -131,7 +131,7 @@ module "ec2_instances" {
 }
 
 module "s3_bucket" {
-  source  = "app.terraform.io/policy-as-code-training/s3-bucket-nat/aws"
+  source  = "app.terraform.io/policy-as-code-training/nat/aws"
   version = "1.0.0"
   bucket_name = "my-bucket"
 }
