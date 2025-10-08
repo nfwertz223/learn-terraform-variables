@@ -10,7 +10,7 @@ terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "~> 3.28.0"
+      version = "~> 3.76.0"
     }
   }
   required_version = ">= 0.14.0"
@@ -130,8 +130,8 @@ module "ec2_instances" {
   }
 }
 
-module "aws_s3_bucket" {
-  source  = "app.terraform.io/policy-as-code-training/nat/aws"
-  version = "1.0.0"
-  bucket_name = "my-bucket-nat"
-}
+# module "aws_s3_bucket" {
+#   source  = "app.terraform.io/policy-as-code-training/nat/aws"
+#   version = "1.0.0"
+#   bucket_name = "my-bucket-nat"
+# }
